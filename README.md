@@ -15,3 +15,8 @@ The layout of this environment is as follows:
    - Client - Anyone that accesses to the services deployed in the aws VPC
    - Support - Anyone who can configure all the resources within the VPC, including both subnet 1 and subnet 2
    - DevOps - Anyone who exploits the resources in the subnet 1 and, indirectly, the shared resources in the subnet 2.
+ 
+ ## ToDo
+
+1. Upload the current Terraform scripts
+2. Update the code according the code terraform naming and syntax
