@@ -25,6 +25,11 @@ variable "cidr-ssh-allowed" {
 variable "cidr-ssh-2-allowed" {
     description = "A comma separated list of CIDR blocks to allow SSH connections from to the second EC2 instance."
 }
-output "public_domain_name_system"{
-    value = "" /*aws_instance.sample_ec2_east*/
+
+output "public_ip_1"{
+    value = "${aws_instance.instance-1.public_dns}"
+}
+
+output "public_ip_2"{
+    value = "${aws_instance.instance-2.public_dns}"
 }
